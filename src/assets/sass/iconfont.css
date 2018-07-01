@@ -1,0 +1,27 @@
+/**
+ * @author yaninghuang<黄亚宁>
+ * @email 1036616721@qq.com
+ * @create date 2018-06-29 17:25:00
+ * @modify date 2018-06-29 17:25:00
+ * @desc [description]
+*/
+
+@font-face {
+    font-family: 'iconfont';  /* project id 705042 */
+    src: url('//at.alicdn.com/t/font_705042_c097z1hv7c.eot'); /* IE9*/
+    src: url('//at.alicdn.com/t/font_705042_c097z1hv7c.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/font_705042_c097z1hv7c.woff') format('woff'), /* chrome, firefox */
+    url('//at.alicdn.com/t/font_705042_c097z1hv7c.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/font_705042_c097z1hv7c.svg#iconfont') format('svg'); /* iOS 4.1- */
+  }
+  
+  .iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-signIn-username::before { content: "\e6a7"; }
+  .icon-signIn-password::before { content: "\e602"; }
