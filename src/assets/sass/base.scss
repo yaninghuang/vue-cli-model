@@ -1,10 +1,12 @@
 /**
- * @author yaninghuang<黄亚宁>
+ * @author yaninghuang<1036616721@qq.com>
  * @email 1036616721@qq.com
  * @create date 2018-06-29 17:15:00
  * @modify date 2018-06-29 17:15:00
  * @desc [description]
 */
+@import './skin.scss';
+
 html,
 body,
 p,
@@ -29,6 +31,9 @@ body {
     font-size: .6rem;
     font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, sans-serif;
 }
+img{
+    border: none;
+}
 
 input,
 textarea {
@@ -39,18 +44,6 @@ textarea {
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-touch-callout: none;
-}
-
-// 万能清除法
-.clearfix:after {
-    content: "";
-    display: block;
-    height: 0;
-    clear: both;
-}
-
-.clearfix {
-    zoom: 1;
 }
 
 html,
@@ -64,4 +57,18 @@ body,
     left: 0;
     width: 100%;
     height: 100%;
+    background-color: $page-bgcolor;
+}
+
+
+// 万能清除法
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
 }

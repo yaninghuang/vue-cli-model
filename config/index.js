@@ -10,12 +10,21 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
+
+    /**
+     * 前端开发数据交互node端代理的说明
+     * 示例中： /api/act 代表接口的基本地址
+     * @target： 目标服务器的地址
+     * @ changeOrigin: 是否跨域（一般都可以设置为true）
+     * @ pathRewrite:  将当前路径，重定向到目标路径，可以用于调试
+     * 以下示例，即可将 this.$http.get('/api',...)  转发到 this.$http.get('http://localhost:8080//static/mock',...)
+     */
     proxyTable: {
-        '/api/act': {
+        '/api': {
             target: 'http://localhost:8080/',
             changeOrigin: true,
             pathRewrite: {
-                '^/api/act': '/static/mock'
+                '^/api': '/static/mock'
             }
         }
     },

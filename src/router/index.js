@@ -9,6 +9,9 @@ const home = () => import('@/views/home')
 const headTop = () => import('@/components/headTop')
 
 export default new Router({
+    
+  mode: 'hash',
+  
   routes: [
     // {
     //   path: '/',
@@ -21,7 +24,7 @@ export default new Router({
       component: login
     },
     {
-      path: '/',
+      path: '/home',
       name: 'home',
       component: home,
       children: [{

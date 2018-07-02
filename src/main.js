@@ -11,8 +11,10 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
 import './assets/sass/iconfont.css'
+import './assets/sass/skin.scss'
 import './assets/sass/base.scss'
 import './assets/sass/login.scss'
+import './assets/sass/home.scss'
 
 Vue.use(ElementUI)
 
